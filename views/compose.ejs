@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" name="postTitle">
+            <label>Post</label>
+            <textarea class="form-control" name="postBody" id="" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Publish</button>
+      </form>
+    <%- include('partials/footer.ejs') %>
+</body>
+</html>
